@@ -1,0 +1,69 @@
+[metadata]
+title    = "Подготовка к ЕГЭ по информатике"
+subtitle = "Учебное пособие"
+author   = ["Когановский Г.И."]
+date     = "Осень 2024"
+lang     = "ru"
+
+[metadata.title-page]
+title-page  = true
+background  = "tp.pdf"
+rule-height = -1
+
+[pandoc]
+src = ["*.md"]
+out-name = "pandoc-markdown.pdf"
+args = [
+  "--pdf-engine=xelatex",
+  "--lua-filter=filters/strikeout.lua",
+  "--lua-filter=filters/underline.lua",
+  "--lua-filter=filters/center-images.lua",
+  "--lua-filter=filters/word-count.lua",
+  "-V block-headings",
+  "-V papersize:a4",
+  "--template=templates/eisvogel-custom.tex",
+  "--listings",
+  "--toc",
+  "--toc-depth=2",
+  "--top-level-division=default",
+  "--metadata-file=tmp/metadata.yaml",
+  "--citeproc",
+  "--bibliography=references.bib",
+]
+
+[metadata.format]
+geometry                  = "left=2cm, right=2cm, top=2cm, bottom=2cm, footskip=5cm"
+linkcolor                 = "NavyBlue"
+toc-own-page              = true
+listings-no-page-break    = false
+caption-justification     = "centering"
+footnotes-pretty          = true
+book                      = true
+disable-header-and-footer = false
+
+[metadata.format.header]
+right = '\rightmark'
+left  = '\thepage'
+
+[metadata.format.footer]
+left  = '\\\ '
+right = '\\\ '
+
+[metadata.latex]
+header-includes = '''
+header-includes: |
+  \usepackage[utf8]{inputenc}
+  \usepackage[normalem]{ulem}
+  \usepackage{caption}
+  \captionsetup[figure]{labelformat=empty}
+  \captionsetup[table]{labelformat=empty}
+  \usepackage{sectsty}
+  \sectionfont{\clearpage}
+  \RedeclareSectionCommand[
+    beforeskip=-10pt plus -2pt minus -1pt,
+    afterskip=1sp plus -1sp minus 1sp]{paragraph}
+  \RedeclareSectionCommand[
+    beforeskip=-10pt plus -2pt minus -1pt,
+    afterskip=1sp plus -1sp minus 1sp,
+    indent=0pt]{subparagraph}
+'''

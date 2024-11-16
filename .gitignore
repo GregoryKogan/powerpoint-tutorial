@@ -1,0 +1,8 @@
+out
+eisvogel.tex
+src/images
+venv
+__pycache__
+.DS_Store
+.vscode
+tmp
