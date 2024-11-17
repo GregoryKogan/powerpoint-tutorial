@@ -1,15 +1,10 @@
-# Introduction
+# Введение
 
-## About this template
+В последний день августовских сборов каждый класс выступает со своей сценкой. Практика показала, что самый простой, универсальный и надёжный способ сопроводить выступление картинками, звуками и видео — презентация в Powerpoint.
 
-This template allows you to write documents in markdown extended with LaTeX, and convert them to gorgeous PDFs using pandoc. It is based on the [Eisvogel template](https://github.com/Wandmalfarbe/pandoc-latex-template)
+Этот туториал поможет вам, вожатым, быстро создать функциональную и надёжную презентацию для выступления вашего класса.
 
-## Reference list
-
-[@example] this is an example of a reference.  
-Here is another example of a reference [@pmd].
-
-Here is an example of a reference list defined in the `references.bib` file:
+## Полезные ссылки
 
 ::: {#refs}
 :::
