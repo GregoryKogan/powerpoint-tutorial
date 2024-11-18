@@ -6,10 +6,8 @@ import shutil
 # Change the current working directory to the root of the project
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
-# Ensure ./out exists and is empty
+# Ensure ./out exists
 os.makedirs("out", exist_ok=True)
-for filename in os.listdir("out"):
-    os.remove(os.path.join("out", filename))
 
 # Recursively remove temporary directory and then create it again
 shutil.rmtree("tmp", ignore_errors=True)
