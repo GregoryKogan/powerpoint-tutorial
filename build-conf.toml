@@ -12,7 +12,7 @@ rule-height = -1
 
 [pandoc]
 src = ["*.md"]
-out-name = "pandoc-markdown.pdf"
+out-name = "powerpoint-tutorial.pdf"
 args = [
   "--pdf-engine=xelatex",
   "--lua-filter=filters/strikeout.lua",
