@@ -5,5 +5,5 @@
 Этот туториал поможет вам, вожатым, быстро создать функциональную и надежную презентацию для выступления вашего класса.
 
 <p align="center">
-  <img width="50%" alt="image" src="https://github.com/user-attachments/assets/499590ab-b2b4-4c08-b341-f2383e5dde6c">
+  <img width="60%" alt="image" src="assets/title-page/pres-title.jpg">
 </p>
