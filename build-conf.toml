@@ -22,7 +22,7 @@ args = [
   "-V block-headings",
   "-V papersize:a4",
   "--template=templates/eisvogel-custom.tex",
-  "--listings",
+  "--syntax-highlighting=idiomatic",
   "--toc",
   "--toc-depth=2",
   "--top-level-division=default",
